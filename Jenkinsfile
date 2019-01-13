@@ -4,7 +4,7 @@ def loop_of_sh(list) {
     }
 }
 
-hosts = ['10.2.6.149', '10.2.4.27']
+hosts = ['10.2.6.149']
 
 pipeline {
   agent {
