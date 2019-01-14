@@ -8,6 +8,7 @@ hosts = ['10.2.6.149']
 
 pipeline {
   agent {
+    System.clearProperty("hudson.model.DirectoryBrowserSupport.CSP")
     kubernetes {
       label 'taaspod'
       defaultContainer 'jnlp'
