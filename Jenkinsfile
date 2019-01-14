@@ -37,8 +37,6 @@ spec:
             sh 'inspec version'
 	    sh 'git clone https://github.com/zyb2n/taas-pipeline-02.git /tmp/taas-pipeline-02'
 	    loop_of_sh(hosts)
-// load saved objects to kibana
-	    sh 'cd /tmp/taas-pipeline-02/kibana/saved && ./import.sh'
          }
         }
       }
